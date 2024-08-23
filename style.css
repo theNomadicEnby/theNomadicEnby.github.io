@@ -4,8 +4,8 @@
 
 /* VARIABLES */
 :root {
-  --primary-color: #74A12E;
-  --secondary-color:#5B2EA1;
+  --primary-green: #74A12E;
+  --primary-purple:#5B2EA1;
 }
 
 /* CSS RESET */
@@ -45,7 +45,7 @@ img {
   display: inline-block;
   padding: .6rem 1.5rem;
   border-radius: 3px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-green);
   transition: all .5s ease-in-out;
 }
 
@@ -60,7 +60,7 @@ img {
 }
 
 #navbar {
-  background-color: var(--primary-color);
+  background-color: var(--primary-green);
   color: #fff;
   padding: 0rem 3rem;
   display: flex;
@@ -117,7 +117,7 @@ img {
   text-align: center;
   width: 100%;
   padding: 7rem .1rem;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-purple);
 }
 
 #projects .projects {
@@ -175,7 +175,7 @@ img {
 }
 
 #projects .projects .box:hover .code {
-  color: var(--primary-color);
+  color: var(--primary-green);
 }
 
 /* CONTACT SECTION */
@@ -224,7 +224,7 @@ img {
 
 /* FOOTER SECTION */
 #main-footer {
-  border-top: solid 4px var(--primary-color);
+  border-top: solid 4px var(--primary-green);
   padding: 1rem;
   background-color: #444;
   color: #fff;
