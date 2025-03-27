@@ -1,267 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Leo M.</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+<title>Portfolio | Leo M. | COMING SOON</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<style>
+    body,h1 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    </style>
 </head>
 <body>
-    <main>
-        <aside class="sidebar " data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="assets/images/memoji.png" alt="avatar" width="80">
-                </figure>
 
-                <div class="info-content">
-                    <h1 class="name" title="Leo M">Leo M.</h1>
-                    <p class="title">Full Stack Developer</p>
-                </div>
+<!-- <script src="custom.js"></script> -->
 
-                <button class="info-more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
-            </div>
 
-            <div class="sidebar-info-more">
-                <div class="separator"></div>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <img src="/assets/images/memoji.png" width="50" height="50">
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center" id="demo">
 
-                <ul class="contacts-list">
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jun 21, 2025 7:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    <p class="w3-large w3-center">left</p></p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.linkedin.com/in/lemorris11/" target="_blank">Leo M.</a>
+  </div>
+</div>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-
-                            <a href="mailto:leo@proton.me" class="contact-link">leo@proton.me</a>
-
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-
-                            <address>Detroit, Michigan, USA</address>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="separator"></div>
-
-                <ul class="social-list">
-
-                  <li class="social-item"><a href="https://github.com/theNomadicEnby" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li class="social-item"><a href="https://www.linkedin.com/in/lemorris11/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-
-                </ul>
-            </div>
-        </aside>
-
-        <div class="main-content">
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item"><a href="index.html"><button class="navbar-link active" data-nav-link>About</button></a></li>
-                    <li class="navbar-item"><a href="resume.html"><button class="navbar-link" data-nav-link>Resume</button></a></li>
-                    <li class="navbar-item"><a href="portfolio.html"><button class="navbar-link" data-nav-link>Portfolio</button></a></li>
-                    <li class="navbar-item"><a href="blog.html"><button class="navbar-link" data-nav-link>Blog</button></a></li>
-                    <li class="navbar-item"><a href="contact.html"><button class="navbar-link" data-nav-link>Contact</button></a></li>
-                </ul>
-            </nav>
-
-            <article class="about active" data-page="about">
-                <header>
-                    <h2 class="h2 article-title">About me</h2>
-                </header>
-
-                <section class="about-text">
-                    <p>My name is Leo and I am an up and coming, self-taught Full Stack Developer available for hire. My dream is to connect with a small to mid-size company seeking to find a teachable, passionate, UX and solutions centered developer to join their team in a contract or part-time remote role. I am also searching for local opportunities to Washington and Michigan with remote or hybrid positions.</p>
-                    <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.</p>
-                </section>
-
-                <section class="service">
-                    <h3 class="h3 service-title">What I'm doing</h3>
-
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
-                            </div>
-
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Web Design</h4>
-                                <p class="service-item-text">The most modern and high-quality design made at a professional level.</p>
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
-                            </div>
-
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Web development</h4>
-                                <p class="service-item-text">High-quality development of sites at the professional level.</p>
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="https://i.postimg.cc/xjLdzYxZ/icon-app.png" alt="icon" width="40">
-                            </div>
-
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Mobile apps</h4>
-                                <p class="service-item-text">Professional development of applications for iOS and Android.</p>
-                            </div>
-                        </li>
-
-                        <!--Need to make following PNG same color as preceding ones-->
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="https://img.icons8.com/?&id=123374&format=png" alt="icon" width="40">
-                            </div>
-
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Data Engineering</h4>
-                                <p class="service-item-text">Assisting in building and maintaining data pipelines, ensuring data quality and availibility for analysis.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="testimonials">
-                    <h3 class="h3 testimonials-title">Testimonials</h3>
-
-                    <ul class="testimonials-list has-scrollbar">
-                        <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
-                                <figure class="testimonials-avatar-box">
-                                    <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="avatar" data-testimonials-avatar width="60">
-                                </figure>
-
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel Lewis</h4>
-
-                                <div class="testimonials-text" data-testimonials-text>
-                                    <p>Richard was hired to create a corporate identity. It's modern, clean and with a beautiful design that got a lot of praises from colleagues and visitors. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
-                                <figure class="testimonials-avatar-box">
-                                    <img src="https://i.postimg.cc/DwY0yHtx/avatar-2.png" alt="avatar" data-testimonials-avatar width="60">
-                                </figure>
-
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica Miller</h4>
-
-                                <div class="testimonials-text" data-testimonials-text>
-                                    <p>Working with Richard has been an absolute pleasure. I was impressed with his attention to detail, his web design skills and his professional approach to our timelines and processes.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
-                                <figure class="testimonials-avatar-box">
-                                    <img src="https://i.postimg.cc/fRFWhX9F/avatar-3.png" alt="avatar" data-testimonials-avatar width="60">
-                                </figure>
-
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily Evans</h4>
-
-                                <div class="testimonials-text" data-testimonials-text>
-                                    <p>I couldn't be happier with the website that Richard created for us. His attention to detail and creativity is unmatched. Our clients frequently compliment the design, and it has significantly improved our brand image.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
-                                <figure class="testimonials-avatar-box">
-                                    <img src="https://i.postimg.cc/zXv1Xv81/avatar-4.png" alt="avatar" data-testimonials-avatar width="60">
-                                </figure>
-
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry Williams</h4>
-
-                                <div class="testimonials-text" data-testimonials-text>
-                                    <p>I was overwhelmed with the thought of redesigning my online store, but Richard made the process seamless. The site is not only visually appealing but also optimized for conversions. I've seen a 50% increase in traffic since the launch!</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <div class="modal-container " data-modal-container>
-                    <div class="overlay " data-overlay></div>
-
-                    <section class="testimonials-modal">
-                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
-
-                        <div class="modal-img-wrapper">
-                            <figure class="modal-avatar-box">
-                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
-                            </figure>
-
-                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
-                        </div>
-
-                        <div class="modal-content">
-                            <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
-                            <time datetime="2023-06-14">14 June, 2023</time>
-
-                            <div class="modal-text" data-modal-text>
-                                <p>Richard was hired to create a corporate identity. It's modern, clean and with a beautiful design that got a lot of praises from colleagues and visitors. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <section class="clients">
-                    <h3 class="h3 clients-title">Clients</h3>
-
-                    <ul class="clients-list has-scrollbar">
-                        <li class="clients-item">
-                            <a href="#"><img src="https://i.postimg.cc/YqfKyG66/logo-1-color.png" alt="logo"></a>
-                        </li>
-
-                        <li class="clients-item">
-                            <a href="#"><img src="https://i.postimg.cc/fWm6JtgG/logo-2-color.png" alt="logo"></a>
-                        </li>
-
-                        <li class="clients-item">
-                            <a href="#"><img src="https://i.postimg.cc/Bb07xpwd/logo-3-color.png" alt="logo"></a>
-                        </li>
-
-                        <li class="clients-item">
-                            <a href="#"><img src="https://i.postimg.cc/hv1yMmkh/logo-4-color.png" alt="logo"></a>
-                        </li>
-
-                        <li class="clients-item">
-                            <a href="#"><img src="https://i.postimg.cc/ry1P86Dc/logo-5-color.png" alt="logo"></a>
-                        </li>
-
-                        <li class="clients-item">
-                            <a href="#"><img src="https://i.postimg.cc/SsWDN8NV/logo-6-color.png" alt="logo"></a>
-                        </li>
-                    </ul>
-                </section>
-            </article>
-        </div>
-    </main>
-
-    <script src="main.js"></script>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
